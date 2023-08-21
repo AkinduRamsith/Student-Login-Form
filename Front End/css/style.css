@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-image: url("/resou/kelli-tungay-PxiS1PBDuGo-unsplash.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.container-1{
+    /* margin:64px 600px 40px 538px; */
+    border-style:groove;
+    /* box-shadow: 4px 4px rgba(0,0,0,0.3); */
+    filter: drop-shadow(5px 5px 5px rgba(170, 209, 12, 0.48));
+    width: 30vw;
+    height: 80vh;
+    background-color:#9cd095;
+    /* background-image: url("/resou/redd-f-gdQnsMbhkUs-unsplash.jpg"); */
+    
+    border-radius: 25px;
+}
+p{
+    text-align: center ;
+    margin-left: 90px;
+    font-size:  30px  !important;
+    font-family: monospace ;
+    width:200px;
+    border-style: hidden hidden groove hidden ;
+    color: azure ;
+    border-radius: 25px;
+}
+.text-edit{
+    border-style: hidden hidden groove hidden ;
+    /* padding: 5px 5px 5px 5px; */
+    padding: 8px;
+    width: 220px;
+    margin-left: 80px;
+    margin-bottom: 8px;
+    font-size: 11px;
+    border-radius: 5px;
+    font-family: monospace ;
+  
+}
+
+.btn-SignUp{
+    margin-left: 200px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100px;
+    border-radius: 4px;
+    font-family: monospace ;
+}
+.btn-edit{
+    background-color: rgb(241, 241, 248);
+    color: #9cd095 ;
+    border-color: rgb(242, 242, 245);
+}
+.genderM{
+    margin-left: 120px;
+    color: aqua ;
+}
