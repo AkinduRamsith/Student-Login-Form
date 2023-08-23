@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.login-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 82vw;
+    height: 80vh;
+   
+    margin-top: 35px;
+    border-radius: 10px ;
+}
+
+.login-image{
+    margin-left: 26px;
+    width: 50vw;
+    height: 80vh;
+    background-image: url("/resou/kari-shea-1SAnrIxw5OY-unsplash.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    border-radius: 10px;
+    
+}
+
+.login-form{
+    border-radius: 10px;
+    width: 30vw;
+    height: 80vh;
+   border-style: groove;
+   background-color: rgb(198, 192, 164);
+}
+.text-login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 64px;
+    margin-bottom: 15px;
+    width: 250px;
+    padding: 8px;
+    border-radius: 7px;
+    border-style: hidden hidden groove hidden ;
+    
+   
+}
+.para{
+    margin-top: 25px ;
+font-size: xx-large;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    border-radius: 10px;
+}
+.btn-submit-login{
+    border-style: hidden;
+    margin-top: 18px;
+    margin-left: 150px;
+    width: 75px;
+    padding: 8px;
+    border-radius: 4px;
+    transition-duration: 0.2s;
+
+    background-color: #f6e0ae;
+   
+}
+.text-login:hover{
+   background-color:  #f6e0ae;
+    
+}  
+
+
+
+
+
+
+.btn-submit-login:hover{
+    background-color: cadetblue;
+    
+    
+}
+
+hr{
+    margin-top: 190px;
+    width: 260px;
+}
+
+.last{
+    text-align: center;
+}
