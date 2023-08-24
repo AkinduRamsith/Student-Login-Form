@@ -19,31 +19,24 @@ public class StudentServiceImplV1 implements StudentService {
 
     @Override
     public void saveStudent(Student student) {
-//        if(student == null)return;
-//        if ( student.getAge() == null && student.getAge().isBlank() && student.getFirstName() == null && student.getFirstName().isBlank()) {
-//
-//            return;
-//        }
-//        StudentEntity studentEntity=new StudentEntity();
-//        studentEntity.setFirstName(student.getFirstName());
-//        studentEntity.setLastName(student.getLastName());
-//        studentEntity.setAge(student.getAge());
-//        studentEntity.setPhoneNumber(student.getPhoneNumber());
-//        studentEntity.setEmail(student.getEmail());
-//        studentEntity.setAddress(student.getAddress());
-//        studentEntity.setInstitute(student.getInstitute());
-//        studentEntity.setBatch(student.getBatch());
-//        studentEntity.setGender(student.getGender());
-//        studentRepository.save(studentEntity);
-
-        StudentEntity map = modelMapper.map(student, StudentEntity.class);
-        if (map.getAge() == null || map.getAge().isBlank() || map.getFirstName() == null || map.getFirstName().isBlank() || map.getPhoneNumber() == null || map.getPhoneNumber().isBlank() || map.getEmail() == null || map.getEmail().isBlank() || map.getAddress() == null || map.getAddress().isBlank() || map.getLastName() == null || map.getLastName().isBlank() || map.getBatch() == null || map.getBatch().isBlank() || map.getInstitute() == null || map.getInstitute().isBlank() || map.getGender()==null || map.getGender().isBlank()) {
-            System.out.println("Hello");
-            return;
+        boolean stu = validateStudent(student);
+        if(stu){
+            StudentEntity map = modelMapper.map(student, StudentEntity.class);
+            studentRepository.save(map);
         }
 
-        studentRepository.save(map);
+    }
 
+    @Override
+    public boolean getStudentByUserName(String userName , String password) {
+       return studentRepository.findByUserNameAndPassword(userName,password) != null ? true : false;
+    }
 
+    private boolean validateStudent(Student student){
+        if (student.getAge() == null || student.getAge().isBlank() || student.getFirstName() == null || student.getFirstName().isBlank() || student.getPhoneNumber() == null || student.getPhoneNumber().isBlank() || student.getEmail() == null || student.getEmail().isBlank() || student.getAddress() == null || student.getAddress().isBlank() || student.getLastName() == null || student.getLastName().isBlank() || student.getBatch() == null || student.getBatch().isBlank() || student.getInstitute() == null || student.getInstitute().isBlank() || student.getGender()==null || student.getGender().isBlank() || student.getUserName()==null || student.getUserName().isBlank() || student.getPassword()==null || student.getPassword().isBlank()) {
+            System.out.println("Hello");
+            return false;
+        }
+        return true;
     }
 }

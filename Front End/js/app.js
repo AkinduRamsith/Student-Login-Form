@@ -7,6 +7,8 @@ const address=document.getElementById("address");
 const institute=document.getElementById("institute");
 const batch=document.getElementById("batch");
 const gender = document.getElementsByName('gender');
+const userName=document.getElementById('userName');
+const password=document.getElementById('password');
 
 const btnReg=document.getElementById("btn-Reg");
 
@@ -26,7 +28,9 @@ btnReg.addEventListener("click",()=>{
         "address" : address.value,
         "institute" : institute.value,
         "batch" : batch.value,
-        "gender" :gen
+        "gender" :gen,
+        "userName" : userName.value,
+        "password" : password.value
     }
     console.log(student);  
 
