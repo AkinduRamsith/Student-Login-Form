@@ -3,6 +3,10 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-image:url("/resou/clark-van-der-beken-mcCAFvlzZFQ-unsplash.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    
 }
 .login-container{
     display: flex;
@@ -20,19 +24,20 @@ body{
     margin-left: 26px;
     width: 50vw;
     height: 80vh;
-    background-image: url("/resou/kari-shea-1SAnrIxw5OY-unsplash.jpg");
+    background-image: url("/resou/mimi-thian-vdXMSiX-n6M-unsplash.jpg");
     background-size: cover;
     background-repeat:no-repeat;
-    border-radius: 10px;
+    border-radius: 0px 10px 10px 0px;
     
 }
 
 .login-form{
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
     width: 30vw;
     height: 80vh;
    border-style: groove;
-   background-color: rgb(198, 192, 164);
+   background-color:#768b9b;
+   opacity: 80%;
 }
 .text-login{
     display: flex;
@@ -44,6 +49,8 @@ body{
     padding: 8px;
     border-radius: 7px;
     border-style: hidden hidden groove hidden ;
+   
+    outline: none;
     
    
 }

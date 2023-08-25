@@ -1,8 +1,6 @@
 package edu.icet.controller;
 
-import edu.icet.dao.StudentEntity;
 import edu.icet.dto.Student;
-import edu.icet.service.StorageService;
 import edu.icet.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,8 +16,6 @@ import java.io.IOException;
 public class StudentController {
     @Autowired
     StudentService studentService;
-    @Autowired
-    StorageService storageService;
 
     @PostMapping
     public void saveStudent(@RequestBody Student student) {
@@ -30,10 +26,5 @@ public class StudentController {
     public boolean getStudentByUserName(@PathVariable String userName,@PathVariable String password){
         return studentService.getStudentByUserName(userName,password);
     }
-    @PostMapping("{image-1}")
-    public ResponseEntity<?> uploadImage(@RequestParam("image") MultipartFile file) throws IOException {
-        String uploadImage = storageService.uploadImage(file);
-        return ResponseEntity.status(HttpStatus.OK)
-                .body(uploadImage);
-    }
+
 }

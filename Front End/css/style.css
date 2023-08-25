@@ -2,11 +2,16 @@ body {
     font-family: "Muli-Regular";
     color: #666;
     font-size: 13px;
-    margin: 0; }
+    margin: 0;
+    background:url("/resou/clark-van-der-beken-mcCAFvlzZFQ-unsplash.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
   
   input, textarea, select, button {
     font-family: "Muli-Regular";
-    color: #333;
+    color: #131111;
     font-size: 13px; 
   }
   .wrapper {
@@ -21,11 +26,13 @@ body {
     margin: auto;
     padding-top: 68px;
     padding-bottom: 40px;
-    color: #333;
+    color: #141313;
     
     background: url("/resou/matese-fields-pvHma684eEI-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 90%;
+    border-radius: 10px;
 }
  .container-1 h3{
     margin-top: -20px;
@@ -63,6 +70,8 @@ form {
     border-radius: 20px;
     font-family: "Muli-Bold";
     background: none;  
+    outline: none;
+    font-weight: bold;
 }
  .text-edit:focus{
     border: 1px solid #ae3c33;
@@ -86,7 +95,7 @@ form {
   align-items: center;
   justify-content: center;
   padding: 0;
-  background: #ae3c33;
+  background:#768b9b;
   font-size: 13px;
   color: #fff;
   text-transform: uppercase;
@@ -111,7 +120,7 @@ form {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #f11a09;
+    background: #37698f;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     

@@ -14,6 +14,7 @@ btnLogin.addEventListener("click", ()=>{
         console.log(res);
         window.open("../student.html","_top");
        }else{
+        alert("Wrong")
         console.log(res);
         userName.value="";
         password.value="";
