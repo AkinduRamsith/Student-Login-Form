@@ -1,12 +1,137 @@
 body{
+    margin: 0px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-image:url("/resou/clark-van-der-beken-mcCAFvlzZFQ-unsplash.jpg");
+    /* justify-content: center; */
+    /* background-image:url("/resou/clark-van-der-beken-mcCAFvlzZFQ-unsplash.jpg"); */
     background-size: cover;
     background-repeat:no-repeat;
     
+}
+html{
+    scroll-behavior: smooth;
+}
+#a1{
+    text-decoration: none;
+    color: white;
+    
+   
+}
+
+nav{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4px;
+    padding-left: 6%;
+    padding-right: 6%;
+    text-shadow: 0 5px 12px rgba(0,0,0,1);
+}
+
+.logo{
+    color: rgb(253, 250, 250);
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: 0 5px 8px rgba(0,0,0,1);
+}
+
+.nav-span{
+    color: #ea1538;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+   color: #ea1538; 
+   transition: .3s;
+}
+
+
+
+.btn-start{
+    display: flex;
+    justify-content: center;
+    border-radius: 25%;
+    border: none;
+    margin-left: 38.9rem;
+    width: 7rem;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: -1.5rem;
+    background-color:#ea1539af;
+
+    
+}
+
+
+.nav-btn{
+    border-radius: 30px;
+    padding: 12px 25px;
+    background:  #ea1538;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+.nav-btn:hover{
+    transform: scale(.9);
+    cursor: pointer;
+}
+
+.welcome{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    
+    background: url("/resou/priscilla-du-preez-XkKCui44iM0-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.welcome-para{
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 15rem;
+    margin-top: 3rem;
+    font-weight: 300 lighter;
+    font-weight: bolder;
+    color: white;
+}
+h2{
+    position:absolute;
+    top: 0%;
+    transform:translateY((-50%));
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-transform:uppercase;
+    text-shadow: 0 5px 10px rgba(0,0,0,1);
+    mix-blend-mode: normal;
+    box-sizing: 0 5px 10px rgba(0, 0, 0, 0.5);
+    /* background: rgba(0,0,0,.2); */
+    font-size: 50px;
+   margin-top: 4.8rem;
+    margin-left: 24rem;
+    font-family: MBCorpo Text,sans-serif;
+    font-family: monospace;
+
+
 }
 .login-container{
     display: flex;
@@ -21,7 +146,7 @@ body{
 }
 
 .login-image{
-    margin-left: 26px;
+    margin-left: 10px;
     width: 50vw;
     height: 80vh;
     background-image: url("/resou/mimi-thian-vdXMSiX-n6M-unsplash.jpg");
@@ -37,7 +162,7 @@ body{
     height: 80vh;
    border-style: groove;
    background-color:#768b9b;
-   opacity: 80%;
+   opacity: 95%;
 }
 .text-login{
     display: flex;
@@ -70,9 +195,35 @@ font-size: xx-large;
     padding: 8px;
     border-radius: 4px;
     transition-duration: 0.2s;
-
-    background-color: #f6e0ae;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #0d324e;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
    
+}
+
+.btn-submit-login::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(2, 109, 109);
+    border-radius: 4px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; 
 }
 .text-login:hover{
    background-color:  #f6e0ae;
@@ -84,8 +235,11 @@ font-size: xx-large;
 
 
 
-.btn-submit-login:hover{
-    background-color: cadetblue;
+.btn-submit-login:hover:before{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     
     
 }
@@ -97,4 +251,43 @@ hr{
 
 .last{
     text-align: center;
+}
+
+
+
+/* div discover-------------------------------------------------------------------------------- */
+.div-discover{
+    width: 100vw;
+    height: 100vh;
+    margin-left: 15rem;
+    margin-top: 3rem;
+   
+}
+.div-dis-1{
+    width: 80vw;
+    height: 70vh;
+    border: 1px solid rgba(255,255 ,255 ,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+.dis-about{
+    color: #ea1538;
+    font-size: 80px;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+
+
+}
+.dis-para{
+    position: relative;
+    width: 40vw;
+    height: 250px;
+    text-align: justify;
+    margin-left: 2rem;
 }
